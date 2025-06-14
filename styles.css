@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, #2c5530, #4CAF50);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.event-info .date-location {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.95;
+}
+
+.event-info .tagline {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #e8f5e8;
+}
+
+.hero {
+    padding: 3rem 1rem;
+    background-color: white;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.highlight {
+    font-size: 1.3rem;
+    color: #2c5530;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.event-details, .registration, .faq {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.event-details h2, .registration h2, .faq h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #2c5530;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.how-it-works, .duration-format {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.how-it-works h3, .duration-format h3 {
+    color: #2c5530;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.how-it-works ul, .duration-format ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.how-it-works li, .duration-format li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.how-it-works li:before, .duration-format li:before {
+    content: "📚";
+    position: absolute;
+    left: 0;
+}
+
+.registration {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.registration-info {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.registration-info p {
+    margin-bottom: 1rem;
+}
+
+.registration-info strong {
+    color: #2c5530;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+    color: #2c5530;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    color: #555;
+}
+
+footer {
+    background-color: #2c5530;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.footer-content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-content a {
+    color: #e8f5e8;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .event-info .date-location {
+        font-size: 1rem;
+    }
+    
+    .event-info .tagline {
+        font-size: 1.2rem;
+    }
+}

@@ -15,7 +15,7 @@ Header Section
 
 Hero Section
 
-- Eye-catching image or illustration: leave a space for an image
+- Eye-catching image or illustration: placeholder image for now
 - Main call-to-action button (Register/Sign Up): Get a Clue Sheet (links to another page with more detailed instructions)
 - Key event highlights (prizes, duration, etc.): Charming prizes for all participants!
 
@@ -46,3 +46,7 @@ Footer
 - Library contact information
 - Social media links: follow us on instagram [@meyer-library-msu](https://www.instagram.com/explore/locations/520886/meyer-library---msu/)
 - join our mailing list!
+
+## Next Steps
+
+Please implement the above outline as a static web page.
