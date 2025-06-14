@@ -8,12 +8,13 @@ body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.6;
     color: #2c2c2c;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #5E0009 0%, #425563 50%, #0093B2 100%);
     min-height: 100vh;
+    font-size: 1.2rem;
 }
 
 header {
-    background: linear-gradient(135deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+    background: linear-gradient(135deg, #5E0009, #0093B2, #CFB500);
     background-size: 400% 400%;
     animation: gradientShift 8s ease infinite;
     color: white;
@@ -54,12 +55,11 @@ header::before {
 
 header h1 {
     font-family: 'Fredoka One', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     text-shadow: 3px 3px 0px #333, 6px 6px 10px rgba(0,0,0,0.3);
     position: relative;
     z-index: 2;
-    animation: bounce 2s ease-in-out infinite alternate;
 }
 
 @keyframes bounce {
@@ -73,14 +73,14 @@ header h1 {
 }
 
 .event-info .date-location {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .event-info .tagline {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #FFE066;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -146,8 +146,8 @@ header h1 {
 }
 
 .highlight {
-    font-size: 1.8rem;
-    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1);
+    font-size: 2.2rem;
+    background: linear-gradient(45deg, #5E0009, #0093B2, #CFB500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -164,15 +164,15 @@ header h1 {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    background: linear-gradient(135deg, #5E0009, #0093B2);
     color: white;
     padding: 1.5rem 3rem;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 8px 25px rgba(94, 0, 9, 0.4);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     position: relative;
     overflow: hidden;
@@ -214,9 +214,9 @@ header h1 {
 .event-details h2, .registration h2, .faq h2 {
     text-align: center;
     font-family: 'Fredoka One', cursive;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     margin-bottom: 3rem;
-    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    background: linear-gradient(45deg, #5E0009, #0093B2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -231,7 +231,7 @@ header h1 {
 }
 
 .how-it-works, .duration-format {
-    background: linear-gradient(135deg, #FFE066, #FF6B6B);
+    background: linear-gradient(135deg, #CFB500, #5E0009);
     padding: 2.5rem;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -247,7 +247,7 @@ header h1 {
 }
 
 .duration-format {
-    background: linear-gradient(135deg, #4ECDC4, #45B7D1);
+    background: linear-gradient(135deg, #0093B2, #425563);
     transform: rotate(1deg);
 }
 
@@ -267,7 +267,7 @@ header h1 {
 
 .how-it-works h3, .duration-format h3 {
     font-family: 'Fredoka One', cursive;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
@@ -279,7 +279,7 @@ header h1 {
 
 .how-it-works li, .duration-format li {
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     padding: 0.5rem;
@@ -294,7 +294,7 @@ header h1 {
 }
 
 .registration {
-    background: linear-gradient(135deg, #96CEB4, #FECA57);
+    background: linear-gradient(135deg, #0093B2, #CFB500);
     border-radius: 30px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     color: white;
@@ -308,7 +308,7 @@ header h1 {
 
 .registration-info {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -326,14 +326,14 @@ header h1 {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    border-left: 5px solid #FF6B6B;
+    border-left: 5px solid #5E0009;
     transition: all 0.3s ease;
     transform: rotate(0.5deg);
 }
 
 .faq-item:nth-child(even) {
     transform: rotate(-0.5deg);
-    border-left-color: #4ECDC4;
+    border-left-color: #0093B2;
 }
 
 .faq-item:hover {
@@ -343,18 +343,19 @@ header h1 {
 
 .faq-item h3 {
     font-family: 'Fredoka One', cursive;
-    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    background: linear-gradient(45deg, #5E0009, #0093B2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .faq-item p {
     color: #555;
     font-weight: 600;
     line-height: 1.8;
+    font-size: 1.2rem;
 }
 
 footer {
@@ -390,25 +391,31 @@ footer::before {
 .footer-content h4 {
     font-family: 'Fredoka One', cursive;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #FFE066;
+    font-size: 1.8rem;
+    color: #CFB500;
 }
 
 .footer-content a {
-    color: #4ECDC4;
+    color: #0093B2;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+    font-size: 1.1rem;
 }
 
 .footer-content a:hover {
-    color: #FFE066;
+    color: #CFB500;
     text-decoration: underline;
+}
+
+.msu-logo {
+    height: 60px;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
     }
     
     .hero-content {
@@ -427,11 +434,11 @@ footer::before {
     }
     
     .event-info .date-location {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     
     .event-info .tagline {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     
     .how-it-works, .duration-format {

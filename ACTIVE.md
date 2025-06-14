@@ -16,25 +16,22 @@ Header Section
 Hero Section
 
 - Eye-catching image or illustration: placeholder image for now
-- Main call-to-action button (Register/Sign Up): Get a Clue Sheet (links to another page with more detailed instructions)
+- Main call-to-action button (Register/Sign Up): Get a Clue Sheet (links to "get started" section)
 - Key event highlights (prizes, duration, etc.): Charming prizes for all participants!
 
 Event Details
 
-- What is the scavenger hunt?
-- How it works/rules
-  - Use the starting clue to find a location in the library. Find the words to fill in the blanks of the next clue there.
-  - Each location will show you some cool thing you can do at the library!
-  - Asking for help is never cheating! The library staff are here to help you!
-- Duration and format
-  - The hunt should take less than 30 minutes.
-  - Do it with your friends!
-  - Available any time in September 2025
+- The hunt should take less than 30 minutes.
+- Do it with your friends!
+- Available any time in September 2025
+- Prizes for all participants!
 
-Registration Information
+Get Started
 
-- No registration necessary. Pick a clue sheet at the front of the library
-- Bring a pencil or pen. No further technology needed
+- Grab a clue sheet at the front of the library
+- Use the starting clue to find a location in the library. Find the words to fill in the blanks of the next clue there.
+- Each location will show you some cool thing you can do at the library!
+- Asking for help is never cheating! The library staff are here to help you!
 
 FAQ Section
 
@@ -60,3 +57,14 @@ Implement the above outline as a static web page.
 [] make all the text bigger
 [] use the placeholder image in images/
 [] make the title hold still
+
+  ✅ Completed:
+  - MSU Brand Colors: Updated color scheme to official MSU colors (Maroon
+  #5E0009, Boomer Sky #0093B2, Pride Band Brass #CFB500)
+  - MSU Logo: Added official MSU logo in the footer
+  - Bigger Text: Increased font sizes across the entire site by 15-25%
+  - Placeholder Image: Replaced with the pixelated character from
+  images/placeholder-for-sticker.png
+  - Static Title: Removed bouncing animation from the header title
+  - Updated Content: Added "Grab a clue sheet" step to match the revised
+  ACTIVE.md
