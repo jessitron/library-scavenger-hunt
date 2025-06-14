@@ -1,3 +1,13 @@
+:root {
+    --maroon: #5E0009;
+    --boomer-sky: #0093B2;
+    --pride-band-brass: #CFB500;
+    --midnight-oil: #425563;
+    --reflex-blue: #0054A4;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +17,13 @@
 body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.6;
-    color: #2c2c2c;
-    background: linear-gradient(135deg, #5E0009 0%, #425563 50%, #0093B2 100%);
+    color: white;
+    background: var(--maroon);
     min-height: 100vh;
     font-size: 1.2rem;
 }
 
 header {
-    background: linear-gradient(135deg, #5E0009, #0093B2, #CFB500);
     background-size: 400% 400%;
     animation: gradientShift 8s ease infinite;
     color: white;
@@ -82,7 +91,7 @@ header h1 {
 .event-info .tagline {
     font-size: 2rem;
     font-weight: 700;
-    color: #FFE066;
+    color: var(--pride-band-brass);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     animation: sparkle 3s ease-in-out infinite;
 }
@@ -97,19 +106,6 @@ header h1 {
     background: white;
     position: relative;
     overflow: hidden;
-}
-
-.hero::before {
-    content: "🎪🎨🎭🎪🎨🎭🎪🎨🎭🎪🎨🎭🎪🎨🎭🎪🎨🎭";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    font-size: 2rem;
-    opacity: 0.1;
-    animation: scroll 30s linear infinite;
-    z-index: 1;
 }
 
 @keyframes scroll {
@@ -129,7 +125,7 @@ header h1 {
 }
 
 .hero-image img {
-    width: 100%;
+    width: 75%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(255, 107, 107, 0.3);
@@ -147,7 +143,7 @@ header h1 {
 
 .highlight {
     font-size: 2.2rem;
-    background: linear-gradient(45deg, #5E0009, #0093B2, #CFB500);
+    background: linear-gradient(45deg, var(--maroon), var(--boomer-sky), var(--pride-band-brass));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -164,7 +160,7 @@ header h1 {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, #5E0009, #0093B2);
+    background:  var(--maroon);
     color: white;
     padding: 1.5rem 3rem;
     text-decoration: none;
@@ -216,10 +212,6 @@ header h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 3.2rem;
     margin-bottom: 3rem;
-    background: linear-gradient(45deg, #5E0009, #0093B2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -231,7 +223,7 @@ header h1 {
 }
 
 .how-it-works, .duration-format {
-    background: linear-gradient(135deg, #CFB500, #5E0009);
+    background: linear-gradient(135deg, var(--pride-band-brass), var(--maroon));
     padding: 2.5rem;
     border-radius: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -247,7 +239,7 @@ header h1 {
 }
 
 .duration-format {
-    background: linear-gradient(135deg, #0093B2, #425563);
+    background: linear-gradient(135deg, var(--boomer-sky), var(--midnight-oil));
     transform: rotate(1deg);
 }
 
@@ -294,7 +286,7 @@ header h1 {
 }
 
 .registration {
-    background: linear-gradient(135deg, #0093B2, #CFB500);
+    background: linear-gradient(135deg, var(--boomer-sky), var(--pride-band-brass));
     border-radius: 30px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     color: white;
@@ -326,14 +318,14 @@ header h1 {
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    border-left: 5px solid #5E0009;
+    border-left: 5px solid var(--maroon);
     transition: all 0.3s ease;
     transform: rotate(0.5deg);
 }
 
 .faq-item:nth-child(even) {
     transform: rotate(-0.5deg);
-    border-left-color: #0093B2;
+    border-left-color: var(--boomer-sky);
 }
 
 .faq-item:hover {
@@ -343,7 +335,7 @@ header h1 {
 
 .faq-item h3 {
     font-family: 'Fredoka One', cursive;
-    background: linear-gradient(45deg, #5E0009, #0093B2);
+    background: linear-gradient(45deg, var(--maroon), var(--boomer-sky));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -359,7 +351,7 @@ header h1 {
 }
 
 footer {
-    background: linear-gradient(135deg, #2c3e50, #4a6741);
+    background: var(--boomer-sky);
     color: white;
     padding: 3rem 1rem;
     margin-top: 4rem;
@@ -392,11 +384,11 @@ footer::before {
     font-family: 'Fredoka One', cursive;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #CFB500;
+    color: var(--pride-band-brass);
 }
 
 .footer-content a {
-    color: #0093B2;
+    color: var(--midnight-oil);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -404,7 +396,7 @@ footer::before {
 }
 
 .footer-content a:hover {
-    color: #CFB500;
+    color: var(--pride-band-brass);
     text-decoration: underline;
 }
 
