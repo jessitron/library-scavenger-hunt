@@ -47,6 +47,16 @@ Footer
 - Social media links: follow us on instagram [@meyer-library-msu](https://www.instagram.com/explore/locations/520886/meyer-library---msu/)
 - join our mailing list!
 
-## Next Steps
+## Done so far
 
-Please implement the above outline as a static web page.
+Implement the above outline as a static web page.
+
+## TODO
+
+[] look at https://brand.missouristate.edu/
+[] find the right colors to use
+[] add at least one MSU logo
+
+[] make all the text bigger
+[] use the placeholder image in images/
+[] make the title hold still
